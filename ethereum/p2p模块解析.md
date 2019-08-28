@@ -3,12 +3,18 @@
  ![](2019-08-24-20-13-35.png)
 P2P启动位于p2p模块server.go, 初始化的工作放在Start()方法中。
 
-## 1.1 启动server
+# 1 启动server
 P2P启动主要包括两个部分启动TCP和启动UDP，默认端口30303。 
 UDP：udp主要用于p2p节点发现，包括nat地址转换，discover发现模块。 
 TCP：tcp主要用于节点和节点连接的区块链数据的处理, 包括接收其他节点的连接和主动连接其他节点的功能，主要逻辑在Peer，同时通过Nat向外暴露地址。
 
-# 2.启动UDP
+## 
+P2P网络数据处理流程
+
+监听(ListenLoop)+拨号(Dial) –> 建立连接(SetupConn) –> Enc 握手(doEncHandshake) –> 协议握手(doProtoHandshake) –> 添加Peer Addpeer –> Run Peer
+
+
+# 2. 启动UDP
 udp启动：
 
 ```go
