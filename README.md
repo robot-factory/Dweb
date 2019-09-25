@@ -8,4 +8,6 @@ research on decentralized and distributed web
 - DHT
 - ZeroNet
 - IPFS
+- Ethereum Name Service
+
 
