@@ -16,8 +16,23 @@ my.xyz域名的域名服务器已经被配置为从以太坊区块链而非本�
 github     https://github.com/ensdomains
 
 ## 合约结构分析
+从doc看主要分 registrar 和 resolver 。
 
-
+## 实际需求
+### 1 添加子域名
+从交易记录看，我购买域名的账户是0xf0ad5cad05e10572efceb849f6ff0c68f9700455，找不到合约，在github上搜索code。获得该地址的合约abi，发现实际上的合约结构可能不止是两个部分而是三个部分，除了 Registrar 和 Resolver, 还有一个 RegistrarController。
+RegistrarController 是用来购买顶级域名的合约，地址是 0xf0ad5cad05e10572efceb849f6ff0c68f9700455 。
+ENS 就是 ENSRegistrar 的接口 ，地址是 0x314159265dd8dbb310642f98f50c066173c1259b 。
+这两部分的合约在@ensdomains/ens上
+Resolver的合约在@ensdomains/resolvers上，https://github.com/ensdomains/resolvers/blob/master/contracts/PublicResolver.sol，地址0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3，EIP-1577上
+```ts
+const map = {
+    '0x314159265dd8dbb310642f98f50c066173c1259b': 'Eth Name Service',
+    '0xfac7bea255a6990f749363002136af6556b31e04': 'Base Registrar Implementation',
+    '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3': 'Public Resolver',
+    '0x5fbb459c49bb06083c33109fa4f14810ec2cf358': 'Public Reverse Resolver'
+};
+```
 
 ## 域名销售
 今年早些时候，以太坊名称服务（ENS）得以成功发布，域名注册数量约为 20 万。目前，域名持有者缺乏将其转售出去的链上方式，而且这已经成为必需的功能。
