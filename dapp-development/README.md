@@ -5,4 +5,5 @@
 - truffle.js
 - web3.js
 - infura
-- 
+- swarm
+- remix
