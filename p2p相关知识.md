@@ -3,6 +3,8 @@
 ## 关键词
 
 NAT traversal NAT穿透
+hole punching UDP打洞技术
+uPNP 
 
 ## nat
 
