@@ -1,5 +1,9 @@
 # p2p知识
 
+## 关键词
+
+NAT traversal NAT穿透
+
 ## nat
 
 ### 端口映射
