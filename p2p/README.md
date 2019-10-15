@@ -16,6 +16,6 @@ nodejs实现或go实现
 ## nat常用的几种方案
 
 1. nat-upnp
-参看node-nat-upnp，最后发现upnp只能做一级路由的映射。允悲。TT好难过啊。。。。
+参看node-nat-upnp，最后发现upnp只能做一级路由的映射。允悲。TT好难过啊。。。。那为什么以太坊的代码里是有upnp的？
 
 2. nat-pmp
