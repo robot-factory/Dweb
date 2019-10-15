@@ -12,3 +12,10 @@ nodejs实现或go实现
 [] bittorrent-dht https://github.com/webtorrent/bittorrent-dht
 [] js libp2p https://github.com/libp2p/js-libp2p
 [] js-ipfs
+
+## nat常用的几种方案
+
+1. nat-upnp
+参看node-nat-upnp，最后发现upnp只能做一级路由的映射。允悲。TT好难过啊。。。。
+
+2. nat-pmp
