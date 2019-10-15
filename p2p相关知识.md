@@ -5,8 +5,14 @@
 NAT traversal NAT穿透
 hole punching UDP打洞技术
 uPNP 
+Internet Gateway Device IGD
 
 ## nat
+网络地址转换（Network Address Translation，简称NAT）是一种在IP分组通过路由器或防火墙时重写源IP地址或/和目的IP地址的技术。这种技术被普遍使用在有多台主机但只通过一个公有IP地址访问因特网的私有网络中。20世纪90年代中期，NAT是作为一种解决IPv4地址短缺以避免保留IP地址困难的方案而流行起来的。家庭和小型办公室的路由器一般都集成了防火墙，DHCP服务器和NAT功能。
+
+NAT穿越是广泛用于P2P领域的通信方式。在视频会议过程中，NAT穿越也在内外网消息通信中起到了至关重要的作用，平台服务器之间、与会终端之间、以及平台服务器和与会终端之间都可能存在信令或多媒体流等的NAT穿越。
+### NAT的类型
+NAT有4种不同的类型：Full Cone、Address Restricted Cone、Port Restricted Cone和Symmetric（对称形），其中Full Cone、Address Restricted Cone、Port Restricted Cone等3种类型又统称为Cone NAT（圆锥形NAT）。
 
 ### 端口映射
 
