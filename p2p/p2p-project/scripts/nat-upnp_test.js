@@ -1,6 +1,6 @@
 var natUpnp = require('nat-upnp');
 
-var client = natUpnp.createClient();
+var clientupnp = natUpnp.createClient();
 
 client.portMapping({
   public: 12345,
@@ -27,7 +27,7 @@ client.getMappings(function (err, results) {
   }
 });
 
-client.getMappings({ local: true }, function (err, results) {
+clientupnp.getMappings({ local: true }, function (err, results) {
   if (err) {
     console.log('getMappings err')
   } else {
