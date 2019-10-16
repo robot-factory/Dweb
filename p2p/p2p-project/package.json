@@ -14,6 +14,7 @@
     "bittorrent-dht": "^9.0.3",
     "ed25519-supercop": "^1.2.0",
     "magnet-uri": "^5.2.4",
+    "nat-pmp": "^1.0.0",
     "nat-upnp": "^1.1.1",
     "network": "^0.4.1"
   }
