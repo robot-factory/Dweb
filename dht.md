@@ -239,3 +239,6 @@ get_peers 与 torrent 文件的 infohash 有关。这时 KPRC 协议中的 "q" =
 ### References
 [1] Peter Maymounkov, David Mazieres, “Kademlia: A Peer-to-peer Information System Based on the XOR Metric”, IPTPS 2002. http://www.cs.rice.edu/Conferences/IPTPS02/109.pdf  
 [2] Use SHA1 and plenty of entropy to ensure a unique ID.
+
+## Q&A
+1. 整个dht的过程是建立在udp上的，而不是udp和tcp同时使用。
