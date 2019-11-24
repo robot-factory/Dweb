@@ -13,7 +13,7 @@ client.externalIp(function (err, info) {
 
 
 // setup a new port mapping
-client.portMapping({ private: 2222, public: 5555, ttl: 3600 }, function (err, info) {
+client.portMapping({ private: 9101, public: 9101, ttl: 3600 }, function (err, info) {
   if (err) throw err;
   console.log(info);
   // {
