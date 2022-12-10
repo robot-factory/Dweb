@@ -550,7 +550,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@0.7.4:
+debug@0.7.4, debug@~0.7.0:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
   integrity sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk=
@@ -1320,6 +1320,13 @@ nan@~2.4.0:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
   integrity sha1-+zxZ1F/k7/4hXwuJD4rfbrMtIjI=
 
+nat-pmp@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nat-pmp/-/nat-pmp-1.0.0.tgz#d5f3fb1dff52d9e20d16ad2aa1c41a54296a8c4a"
+  integrity sha512-DHh1Ko06d17x9iUoiWse39W8pYed34uPJj5sxAnfCju22zBF2LU2Dh3UhUhiQz9Rfp4otcBFmMeQhfJNGYdfRw==
+  dependencies:
+    debug "~0.7.0"
+
 nat-upnp@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/nat-upnp/-/nat-upnp-1.1.1.tgz#b18365e4faf44652549bb593c69e6b690df22043"
@@ -1619,9 +1626,9 @@ punycode@^2.1.0:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 queue-microtask@^1.1.2:
   version "1.1.2"
